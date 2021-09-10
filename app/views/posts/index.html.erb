@@ -4,7 +4,7 @@
     <h1 class="is-size-2">All User Posts</h1>
     <%= link_to 'New Post', new_post_path, class: "button is-info" %>
     <% @posts.each do |post| %>
-      <div class="box">
+      <div class="box is-12">
         <article class="columns">
           <nav class="column">
             <div class="is-12 has-centered-text is-size-4">
@@ -22,7 +22,7 @@
               </div>
             </div>
           </nav>
-        </div>
+        </article>
       </div>          
     <% end %>
     <br>
