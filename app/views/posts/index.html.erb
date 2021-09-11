@@ -17,7 +17,7 @@
               <div class="is-12 is-size-6">
                 <p><strong>Author:</strong></p>
                 <p>
-                  <%= current_member.first_name + " " + current_member.last_name + " - " + current_member.email%>
+                  <%= post.member.first_name + " " + post.member.last_name + " - " + post.member.email%>
                 </p>
               </div>
               <% if current_member.id == post.member_id %>

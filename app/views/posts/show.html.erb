@@ -15,10 +15,10 @@
                 <div class="is-size-6 is-4 box">
                     <strong>Author:</strong><br />
                     <p>
-                        <%= current_member.first_name + " " + current_member.last_name%>
+                        <%= @post.member.first_name + " " + @post.member.last_name%>
                     </p>
                     <p>
-                        <%= current_member.email %>
+                        <%= @post.member.email %>
                     </p>
                 </div>
             <% end %>
