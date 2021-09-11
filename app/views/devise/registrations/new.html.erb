@@ -5,11 +5,25 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
+        <%= f.label :first_name, class:"label" %>
+        <p class="control">
+          <%= f.text_field :first_name, autofocus: true, autocomplete: "First Name", class:"input" %>
+        </p>
+      </div>
+
+      <div class="field">
+        <%= f.label :last_name, class:"label" %>
+        <p class="control">
+          <%= f.text_field :last_name, autocomplete: "Last Name", class:"input" %>
+        </p>
+      </div>
+
+      <div class="field">
         <%= f.label :email, class:"label" %>
         <p class="control has-icons-left">
-          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"input" %>
+          <%= f.email_field :email, autocomplete: "email", class:"input" %>
           <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
+            <i class="fas fa-envelope"></i>
           </span>
         </p>
       </div>

@@ -42,10 +42,10 @@
             <div class="buttons">
               <% if member_signed_in? %>
                 <%= link_to 'Member Profile', edit_member_registration_path, class:"button is-primary", style:"font-weight:bold;" %>
-                <%= link_to 'Log Out', new_member_session_path, class:"button is-light" %>
+                <%= link_to 'Log Out', destroy_member_session_path, class:"button is-light" %>
               <% else %>
                 <%= link_to 'Sign Up', new_member_registration_path, class:"button is-primary", style:"font-weight:bold;" %>
-                <%= link_to 'Log In', destroy_member_session_path, class:"button is-light" %>
+                <%= link_to 'Log In', new_member_session_path, class:"button is-light" %>
               <% end %>
             </div>
           </div>
