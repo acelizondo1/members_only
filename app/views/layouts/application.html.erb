@@ -13,9 +13,11 @@
 
   <body>
     <% if flash[:notice] %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <p class="notice centered-text notification is-primary"><%= notice %></p>
     <% end%>
+    <% if flash[:alert] %>
+      <p class="alert centered-text notification is-danger"><%= alert %></p>
+    <% end %>
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
